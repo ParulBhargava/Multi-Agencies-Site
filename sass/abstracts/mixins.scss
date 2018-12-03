@@ -1,0 +1,79 @@
+@mixin flexRow{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexCol{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+// Media Query Breakpoints
+@mixin respondUp-sm {
+    // Extra small devices (portrait phones, less than 576px)
+    // No media query for `xs` since this is the default in Bootstrap
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {  }
+}
+@mixin respondUp-md { 
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) { }
+}
+@mixin respondUp-lg { 
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) { }
+ }
+@mixin respondUp-xl { 
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) { }
+}
+
+// viewports with fractional widths (which can occur under certain conditions on 
+// high-dpi devices, for instance) by using values with higher precision for these comparisons.
+
+@mixin respondDown-xs{
+     // Extra small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) {@content; } 
+}
+@mixin respondDown-sm{ 
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {@content; } 
+}
+@mixin respondDown-md{ 
+    // Medium devices (tablets, less than 992px)
+    @media (max-width: 991.98px) {@content; } 
+}
+@mixin respondDown-lg{// Large devices (desktops, less than 1200px)
+    @media (max-width: 1199.98px) { }
+    
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+}
+
+// for targeting a single segment of screen sizes using the
+// minimum and maximum breakpoint widths.
+
+@mixin respondOnly-xs{
+    // Extra small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) {@content; } 
+}
+@mixin respondOnly-sm{ 
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) and (max-width: 767.98px) {@content; } 
+}
+@mixin respondOnly-md{ 
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) and (max-width: 991.98px) {@content; } 
+}
+@mixin respondOnly-lg{ 
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) and (max-width: 1199.98px) {@content; }
+}
+@mixin respondOnly-xl{ 
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {@content; }
+ }

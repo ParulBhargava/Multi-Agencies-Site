@@ -1,0 +1,145 @@
+#page-product{
+    background: rgba($white, 0.6) url("/img/man.png") no-repeat fixed;
+    background-size:40% 100%;
+    background-position:110% bottom;
+    position: relative;
+    width:100%;
+    color:$black;
+    padding:4% 0%;
+    @include respondDown-md{
+        background-size: 70% 100%;
+        padding:24% 0;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom,$white,$white);
+        opacity: .9; 
+      }
+    .product__container{
+       
+        &--header{
+            margin-top: 5%;
+            margin-bottom: 4%;
+            margin-right: 0;
+            #aboutus{
+                margin-left: 8%;
+            }
+            & .Para{
+                width:70%;
+                margin:2% 8%;
+                @include respondDown-md{
+                    width:85%;
+                    margin:8%;
+                }
+            }                 
+        }
+        &--wrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top:0;
+            margin-left: 8%;
+            width: 100%;
+            padding: 0;
+            @include respondDown-md{
+                flex-direction: column;
+                margin-left: 0%;
+            }
+    
+            &-box{
+                color: $white;
+                position: relative;
+                margin-right:2%;
+                height:300px;
+                border:10px solid $secondary-color;
+                cursor:pointer;
+                transition:all 0.5s ease-in-out;
+                text-align: center;
+                @include respondDown-md{
+                    width:80%;
+                    margin: 0;
+                }
+            }
+            &-box:nth-child(1){
+                background-image:url("/img/insolsulphur.jpeg");
+                background-size: cover;
+            }
+            &-desc{
+                padding:4% 8%;
+            }
+        } 
+        &--accord{
+            margin: 4% 4%;
+            margin-right: 0;
+            width:95%;
+            .button-group{
+                margin-left:4%;
+            }
+            ul{
+                list-style: none;;
+            }
+            .card{
+                margin:0;
+                padding: 0;
+                border:none;
+             
+            }
+             .cards{
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+            .cardin{
+                padding:2% 0;
+                margin:0;
+                
+            }
+        }
+    }
+    
+}
+// Industry Use Section
+.use__wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    padding: 4% 8% ;
+    background-color: $gray-light;
+    @include respondDown-md{
+    flex-wrap: wrap;
+    }
+
+    &--h1{
+        width: 29%;
+        
+        @include respondDown-md{
+        padding-left: 8%;
+        padding-right: 3%;
+        padding-bottom: 4%;
+        padding-top: 4%;
+
+        }
+    }
+    &--container{
+   
+    margin-left:0;     
+    img{
+        width:24%;
+        margin:0;
+        padding: 0;
+     
+        @include respondDown-md{
+            margin: 1%;
+            width:47%;
+        }       
+    }
+    }
+    
+}

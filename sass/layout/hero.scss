@@ -1,0 +1,79 @@
+.hero{
+    background: url("/img/d90rubber.jpg");
+    background-size:cover;
+    background-position:55% center;
+    position: relative;
+    height: 100vh;
+    width:100%;
+
+    &__titleBox{
+     
+        position: absolute;
+        top:19rem;
+        height:15rem;
+        
+        @include respondDown-md{
+            top:19rem;
+        }
+        @include respondDown-sm{
+            top:18rem;
+            height:16rem;
+        
+        }
+        &--p{
+            padding-top:2%;
+            color: $white;
+            font-size:0.85rem;
+            line-height: 1.5;
+        }
+    }
+    &__title{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Montserrat';
+        color:$secondary-color;
+        padding: 3%  11%;
+        padding-bottom: 3%;
+        font-size:2rem;
+        font-weight: 400;
+        line-height: 1.22;
+
+        @include respondDown-sm{
+            font-size: 1.3rem;
+            padding-left:3%;
+        }
+
+        #subTitle{
+            font-size: 1.5rem;
+            @include respondDown-sm{
+                font-size: 1.1rem;
+             
+            }
+        }
+        
+    }
+}
+
+.blackbg{
+    background-color:rgba($black, 0.6);  
+}
+.navBox{
+    display: flex;
+    flex-flow: column;
+    color:white;
+    justify-content: flex-end;
+    margin: 0;
+    .contacts{
+      margin: 0;
+        text-align: center;
+        font-size: 0.85rem;      
+        padding-bottom: 10px;
+        width:100%;
+        @include respondDown-sm{
+            margin: 0;
+        }
+    }
+}
+.bord{
+    border-top: 1px solid $gray-light;
+}

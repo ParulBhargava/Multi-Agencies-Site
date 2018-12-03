@@ -1,0 +1,19 @@
+//Fonts, font properties, text, text color
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway-Bold', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    src:
+        url('/fonts/Montserrat/Montserrat-Black.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype'),
+        url('/fonts/Raleway/Raleway-Black.ttf') format('truetype'), /* Super Modern Browsers */
+        url('/fonts/Raleway/Raleway-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;    
+}
+body{
+    font-family: 'Raleway', sans-serif, 'Montserrat';
+} 
+.nos{
+    font-family: 'Montserrat';
+}

@@ -1,0 +1,115 @@
+footer{
+background-color: $tertiary-color;
+color:$white;
+.address{
+cursor: pointer;
+}
+.footer{
+   background: url("/img/india-1.jpg") no-repeat;
+    background-size:70% 100%;
+    background-position:0 85%;
+    padding: 10% 0;
+    @include respondDown-md{
+        background-size:cover;
+        background-position: center;
+        padding: 30% 0;
+    }
+    .footRow{
+        @include respondDown-md{
+         flex-direction: column;
+        }  
+    }
+
+    &__header{
+        // margin-top:8%;
+        margin-left:8%;
+    }
+    &__contact{
+        margin:3%;
+        margin-right: 0;
+        display: flex;
+        flex-direction: row;
+        width:100%;
+      
+        @include respondDown-md{
+            flex-direction: column;
+            margin: 0;
+            padding-left: 8%;
+            padding-top: 8%;
+            
+        }
+        
+        &--social{
+            width:100%;
+            background-color: rgba($tertiary-color, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: flex-start;
+            padding: 2%;
+            padding-right: 0;
+            border-radius: 4px;
+            height: auto;
+            @include respondDown-md{
+            padding-bottom: 4%;   
+            width: 90%;
+            }
+            .address{
+              display: flex; 
+              font-size: 0.8rem; 
+              width: 100%;
+            }
+            .ali{
+                width:48px;
+            }
+
+        }
+        &--socialbm{
+            margin-top: 6%;
+            margin-left: 10%;
+        }
+        &--form{ 
+        background-color: rgba($tertiary-color, 0.92);
+        padding: 2%;
+        width:100%;
+        font-size: 0.9rem;
+        text-align: center;
+
+        @include respondDown-md{
+            margin-bottom: 4%; 
+            width:90%;  
+            }
+        }
+        &--map{
+            margin: 0;
+           padding:0;
+            iframe{
+                width: 40vw;
+                height: 70vh;
+                @include respondDown-md{
+                    width:80vw;
+                      }
+            }
+            
+        }
+    }
+   
+}
+.copy{
+    display: flex;
+    font-size:0.7rem;
+    margin:auto 38%;
+    margin-right: 0;
+    padding: 10px 0;
+    color:gray;
+    a:link{
+        color:gray;
+    }
+    @include respondDown-md{
+        margin-left: 4%;
+     
+        flex-wrap:wrap;
+        font-size:0.68rem;
+    }
+}
+}

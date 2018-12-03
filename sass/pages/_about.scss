@@ -1,0 +1,113 @@
+#about{
+    background:rgba($white, 1) url("/img/tire.png");
+    background-repeat: no-repeat;
+    background-size:40% 100%;
+    background-position:-18% -120%;
+    height: 100vh;
+    width:100%;
+    color:$black;
+    margin: 0;
+    padding:2%;
+    @include respondDown-md{
+     height: auto;
+     background-size:50% 100%;
+     padding:22% 0;
+    }
+    
+    .about__wrapper{
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top:8%;
+        @include respondDown-md{
+            flex-flow:column;
+        }
+        #aboutus{
+            @include respondDown-md{
+                margin-left:4%;
+            }
+        }
+        &--left{
+            .Para{
+                margin:2% 0;
+                @include respondDown-md{
+                    margin-left:4%;
+                }
+            }
+            &-section{
+                margin:8% 0;
+                display: flex;
+                justify-content:space-evenly;
+            
+                @include respondDown-sm{
+                 margin-top:4%;
+                 margin-left:0;
+                }
+            }
+            .box{
+                width:100%;
+                padding:4%;
+               
+                @include respondDown-sm{
+                    padding: 0;
+                }
+                &__container--h3{
+                    @include respondDown-sm{
+                       font-size: 0.6rem;
+                    }
+                   }
+            
+            }
+    
+        }
+        &--right{
+            margin-top: 4%;
+            margin-left:5%;
+            margin-right: 0;
+    
+            @include respondDown-sm{
+                margin-top:4%;
+                margin-left:0%;
+                margin-right: 0;
+                right: 0;
+            }
+            video{
+             width:90%;
+             border-left:10px solid $secondary-color;
+                border-top:10px solid $secondary-color;
+            }
+            #Intro__video{
+                width:100%;
+                
+            }
+            #follow{
+                margin:2%;
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: flex-start;
+               
+                .follow__box{
+                    display: flex;
+                    align-items: flex-start;
+                    span{
+                           a:link, a:active, a:visited{
+                            font-size: 1.4rem;
+                            font-weight: 900;
+                            line-height: 1.8rem;
+                            color:$secondary-color;
+                        }
+                    }
+                    img{
+                        width:34px;
+                    }
+                }
+            }
+    
+    
+        }
+    }
+    }
+    

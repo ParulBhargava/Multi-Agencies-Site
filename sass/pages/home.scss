@@ -1,0 +1,193 @@
+
+.services1{
+    background-image: -moz-linear-gradient(to right, blue 0%, $tertiary-color 100%), url("/img/plant1.jpg");
+    background-image: -webkit-linear-gradient(to right, blue 0%, $tertiary-color 100%), url("/img/plant1.jpg");
+    background-image: -o-linear-gradient(to right, blue 0%, $tertiary-color 100%), url("/img/plant1.jpg");
+    background-image: url(/img/plant2.jpg), linear-gradient(to right,blue 0%,#0f0f0f 50%, $tertiary-color 100%);
+    background-blend-mode:darken;
+    background-size:cover;
+    background-position:center bottom;
+    width:100%;
+    color:$white;
+    @include respondDown-md{
+        background: $tertiary-color;
+    }
+    &__container{
+        display: flex;
+        margin-top: 10%;
+        margin-left:8%;
+        margin-bottom: 8%;
+     
+        @include respondDown-md{
+        flex-flow: column;
+        margin-left: 4%;
+        margin-top: 30%;
+        }
+        &--info{
+         width:100%;
+        .sr_txt{
+            margin: 4% 2%;
+            width:100%;
+           }
+        }
+        &--desc{
+           margin: 0 2px;
+           &-wrapper{
+               display: flex;
+               flex-direction: row;
+               flex-wrap: wrap;
+               justify-content:flex-start;
+               align-items: flex-start;
+          
+               @include respondDown-md{
+                    width:100%;
+                    margin: 0;
+                    padding: 0;
+                }
+               &-box{
+                    margin:4% 0;
+                    text-align: center;
+  
+                    @include respondDown-sm{
+                        margin:0;
+                        padding:4% 2%;
+                        width:50%;
+                    }
+                 h3{
+                    width: 100%;
+                    margin: 0; 
+                    font-size: 110%;
+                    color: $secondary-color;
+                 }
+                 &-title{
+                     font-size: 80%;
+                   
+                 }
+               }
+           }
+        }
+    }
+   }
+
+// Network Section
+.nwContainer{
+    margin:2% 0;
+    display: flex;
+    @include respondDown-md{
+    flex-direction: column;
+    margin:22% 0;
+    }
+
+    &__info{
+    margin-left: 8%;
+    margin-top:8%;  
+    @include respondDown-md{
+        width: 90%;
+    }
+    .nw_txt{
+        margin-top: 8%;
+    }
+
+    }
+
+    &__section{
+        margin-left:0;
+        margin-top:1%;
+        width: 100%;
+        @include respondDown-md{
+            margin-left: 2%;
+        }
+
+    }
+}
+
+.services2{
+    background: url("/img/logistics.jpg") no-repeat;
+    background-size:100% 100%;
+    background-position:-2% 0;
+    position: relative;
+    color:$white;
+    display:flex;
+    flex-direction: row;
+    
+    @include respondDown-md{
+        flex-direction: column;
+    }
+    &__left{
+        width: 100%;
+        justify-content: center;
+        align-items:center;
+        background-color:$black;
+        opacity: 0.7;
+        padding:4% 8%;
+        filter: alpha(opacity=70); /* For IE8 and earlier */
+       
+        @include respondDown-md{
+            height:auto;
+        }
+            
+        &--logicstat{
+            margin:2% 8%;
+            margin-right: 0;
+            @include respondDown-md{
+                margin:8% 4%;
+            }
+            p{
+                margin-top:8%;
+            }
+        }
+
+    }
+    &__right{
+        background: url("/img/assoc.jpg") no-repeat;
+        background-size:100% 100%;
+        background-position:0 85%;
+        position: relative;
+        width:100%;
+        padding:8% 8%;
+        &--asso{
+            width: 100%;
+            height: 100%;
+            align-self:center;
+            background-color: $tertiary-color;
+            opacity: 0.9;
+            filter: alpha(opacity=70); /* For IE8 and earlier */
+            font-size: 0.9rem;
+
+            @include respondDown-md{
+                height:auto;
+            }
+            &-box{
+                padding: 8%;
+               
+                .chip {
+                    display: flex;
+                    width:100%;
+                    margin-top:4%;
+                    margin-left: 1%;
+                    margin-bottom: 8%;
+                    padding: 20px 20px;
+                    height: 50px;
+                    font-size: 13px;
+                    line-height: 50px;
+                    border-radius: 25px;
+                    @include respondDown-sm{
+                        font-size: 11px;
+                    }
+                }
+                
+                .chip img {
+                    float: left;
+                    margin: 0 10px 0 -25px;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 10%;
+                }
+            & .Para{
+                padding-top:6%;
+            }
+            }
+
+        } 
+    }
+}

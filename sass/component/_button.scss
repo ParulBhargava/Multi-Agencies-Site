@@ -1,0 +1,43 @@
+button{
+    background-color:$secondary-color;
+    border:none;
+    width:150px;
+    height:50px;
+    font-family: 'Montserrat';
+    color: $tertiary-color;
+    font-size: 1rem;
+    font-weight: 600;
+    -webkit-box-shadow: 5px 5px 3px -4px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 3px -4px rgba(0,0,0,1);
+    box-shadow: 5px 5px 3px -4px rgba(0,0,0,1);
+    transition: all 0.4s ease-in-out;
+    @include respondDown-sm{
+        width:80px;
+        height:40px;
+        font-size: 0.7rem;
+        }
+}
+
+
+#title-button{
+   margin-left:89%;
+
+   @include respondDown-sm{
+       margin-left:76%;
+   }
+
+}
+button:hover, button:active{
+    -ms-transform: translateY(-2px); /* IE 9 */
+    -webkit-transform: translateY(-2px); /* Safari */
+    transform: translateY(-2px); /* Standard syntax */
+    -webkit-box-shadow: 5px 5px 3px -1px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 3px -1px rgba(0,0,0,1);
+    box-shadow: 5px 5px 3px -1px rgba(0,0,0,1);
+    border:none;
+}
+.specs{
+    box-shadow:none;
+    transition:all 0.5s ease-in;
+       
+}
